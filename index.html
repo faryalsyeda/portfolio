@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faryal Syeda - Agentic AI Developer</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 0; color: #111; line-height: 1.6; background: #f7f7f7; }
+  header { background: #0f172a; color: #fff; padding: 48px 20px; text-align: center; }
+  header h1 { margin: 0 0 8px; font-size: 36px; }
+  header p { margin: 6px 0; color: #cbd5e1; }
+  main { max-width: 900px; margin: 0 auto; padding: 24px 20px 48px; }
+  section { background: #fff; border-radius: 12px; padding: 24px; margin: 20px 0; }
+  h2 { margin-top: 0; }
+  .tag { display: inline-block; background: #e2e8f0; border-radius: 20px; padding: 4px 12px; margin: 4px 4px 4px 0; font-size: 14px; }
+  .project { border: 1px solid #e2e8f0; border-radius: 10px; padding: 18px; margin: 16px 0; }
+  .status { font-weight: bold; }
+  .done { color: #15803d; }
+  .next { color: #b45309; }
+  a { color: #0f766e; }
+  footer { text-align: center; color: #64748b; padding: 20px; font-size: 14px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Faryal Syeda</h1>
+  <p>Agentic AI Developer | Building Intelligent Multi-Agent Systems</p>
+  <p>I build AI agents that do work, not just chat - scoring, drafting, and saving time for real businesses.</p>
+  <p>Karachi, Pakistan</p>
+</header>
+
+<main>
+  <section>
+    <h2>About</h2>
+    <p>I design intelligent systems that think, plan, and act. My focus is practical AI for small and growing businesses: agents that qualify leads, read documents, and automate repetitive work, built step by step with clear, explainable results.</p>
+    <p><strong>How I work:</strong> Discovery - Small demo - Paid pilot - Full project. No big promises before a working demo.</p>
+  </section>
+
+  <section>
+    <h2>Services</h2>
+    <ul>
+      <li><strong>AI Agent Development</strong> - Agents that score, prioritise, and draft, using tools and APIs.</li>
+      <li><strong>Business Automation</strong> - Lead follow-up, triage, and repetitive workflow automation.</li>
+      <li><strong>Document Assistant (RAG)</strong> - Ask questions over your own documents, with summaries and extracted fields.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>1. Lead Qualification Agent <span class="status done">- Done, demo ready</span></h3>
+      <p><strong>Problem:</strong> A business gets a long lead list and does not know who to contact first.</p>
+      <p><strong>Solution:</strong> The agent scores each lead 0-100 for email, phone, website, industry fit, and location, grades it A / B / C, and drafts a short personalised first email for A and B leads. No price in the first email. No contact is guessed.</p>
+      <p><strong>Demo result:</strong> On a 5-lead sample, 2 leads scored 100, 2 scored 80, and 1 scored 50 for missing data.</p>
+      <p><strong>Tech:</strong> Python, FastAPI, CSV</p>
+      <p>Code: <a href="https://github.com/faryalsyeda/lead-qualification-agent">Lead Qualification Agent on GitHub</a></p>
+    </div>
+
+    <div class="project">
+      <h3>2. Document RAG Agent <span class="status done">- Done, demo ready</span></h3>
+      <p><strong>Problem:</strong> A business has documents but no quick way to find the right answer in them.</p>
+      <p><strong>Solution:</strong> Ask a question over your own documents and get an answer quoted from those documents, with the source file, section and score. If nothing matches, it says "No relevant section found" instead of guessing.</p>
+      <p><strong>Demo result:</strong> Tested on 3 fictional sample documents, including the refund policy (14 days, unused part only after full delivery) and the starter package ($200/month in the fictional example).</p>
+      <p><strong>Tech:</strong> Python, FastAPI, keyword / TF-IDF retrieval</p>
+      <p>Honest limit: this demo does not use an LLM; answers are quotes from the documents, not generated text.</p>
+      <p>Code: <a href="https://github.com/faryalsyeda/document-rag-agent">Document RAG Agent on GitHub</a></p>
+    </div>
+
+    <div class="project">
+      <h3>3. Multi-Agent Research and Outreach Workflow <span class="status done">- Done, demo ready</span></h3>
+      <p><strong>Problem:</strong> Research, drafting and checking are usually done by hand, one after another.</p>
+      <p><strong>Solution:</strong> Three agents in sequence: Researcher finds only notes that exist in the sample data, Writer drafts from those facts only, and Reviewer fails a draft that contains a price not in the facts, a guessed email, a guaranteed-result claim, a missing fact, or more than 200 words.</p>
+      <p><strong>Demo result:</strong> Tested on "lead generation" for "small cafes" with reviewer PASS.</p>
+      <p><strong>Tech:</strong> Python, FastAPI</p>
+      <p>Honest limit: these are rule-based functions, not LLM agents.</p>
+      <p>Code: <a href="https://github.com/faryalsyeda/multi-agent-workflow">Multi-Agent Workflow on GitHub</a></p>
+    </div>
+
+    <div class="project">
+      <h3>4. MCP and FastAPI Tool Agent <span class="status done">- Done, demo ready</span></h3>
+      <p><strong>Problem:</strong> An agent that only answers from memory cannot complete real work.</p>
+      <p><strong>Solution:</strong> The agent picks a tool from its registry and returns the tool's actual result, with the tool name stated. Tools: score_lead, search_docs, draft_email, add_numbers.</p>
+      <p><strong>Demo result:</strong> Tested lead scoring (100/A), document search, and add 12+30+8=50.</p>
+      <p><strong>Tech:</strong> Python, FastAPI, MCP-style tool manifest</p>
+      <p>Honest limit: tools run as local Python functions behind an MCP-style manifest; this is not yet a full MCP server transport.</p>
+      <p>Code: <a href="https://github.com/faryalsyeda/mcp-tool-agent">MCP Tool Agent on GitHub</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills, with proof</h2>
+    <p>
+      <span class="tag">Python - Lead Qualification Agent</span>
+      <span class="tag">FastAPI - Lead Qualification Agent API demo</span>
+      <span class="tag">AI Agents - Lead Qualification Agent</span>
+      <span class="tag">RAG - Document RAG Agent</span>
+      <span class="tag">Multi-Agent Systems - Multi-Agent Workflow</span>
+      <span class="tag">MCP - MCP Tool Agent</span>
+      <span class="tag">Prompt Engineering</span>
+      <span class="tag">Context Engineering</span>
+      <span class="tag">Docker - Dockerfile in each project</span>
+      <span class="tag">CI/CD - GitHub Actions in each project</span>
+    </p>
+    <p>Skills are listed only where a project shows them, or marked as planned where the project is still coming.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Connect on LinkedIn, or send a message with your business problem and what kind of leads or automation you need. A small demo comes before any full project.</p>
+    <p><a href="https://www.linkedin.com/in/faryal-syeda-8aba1624a">LinkedIn</a> | <a href="https://github.com/faryalsyeda">GitHub</a></p>
+  </section>
+</main>
+
+<footer>
+  Demo projects use sample data unless a real client result is stated. No fake client results are shown.
+</footer>
+</body>
+</html>
