@@ -109,6 +109,7 @@
       <p><strong>Problem:</strong> A business has documents but no quick way to find the right answer in them.</p>
       <p><strong>Solution:</strong> Ask a question over your own documents and get an answer quoted from those documents, with the source file, section and score. If nothing matches, it says "No relevant section found" instead of guessing.</p>
       <p><strong>Demo result:</strong> Tested on 3 fictional sample documents, including the refund policy (14 days, unused part only after full delivery) and the starter package ($200/month in the fictional example).</p>
+      <p><strong>Real run:</strong> The same code was also run on Faryal's own real documents: her portfolio services text and the Project 1 and Project 5 READMEs. It quoted her working method correctly (Discovery - Small demo - Paid pilot - Full project), found the Meta 20% budget-change limit and the lead scoring rules in the top 2 results, and correctly said "No relevant section found" for an unrelated weather question.</p>
       <p class="tech"><strong>Tech:</strong> Python, FastAPI, keyword / TF-IDF retrieval</p>
       <p>Honest limit: this demo does not use an LLM; answers are quotes from the documents, not generated text.</p>
       <a class="code-link" href="https://github.com/faryalsyeda/document-rag-agent">Document RAG Agent on GitHub -&gt;</a>
