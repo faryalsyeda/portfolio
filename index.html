@@ -120,6 +120,7 @@
       <p><strong>Problem:</strong> Research, drafting and checking are usually done by hand, one after another.</p>
       <p><strong>Solution:</strong> Three agents in sequence: Researcher finds only notes that exist in the sample data, Writer drafts from those facts only, and Reviewer fails a draft that contains a price not in the facts, a guessed email, a guaranteed-result claim, a missing fact, or more than 200 words.</p>
       <p><strong>Demo result:</strong> Tested on "lead generation" for "small cafes" with reviewer PASS.</p>
+      <p><strong>Real run:</strong> The same workflow was also run on real facts about Faryal's own work, for "lead generation" for "small businesses". Researcher found 2 matching facts, Writer drafted only from those facts with sources, and Reviewer verdict was PASS, with no price, email or guaranteed claim in the draft.</p>
       <p class="tech"><strong>Tech:</strong> Python, FastAPI</p>
       <p>Honest limit: these are rule-based functions, not LLM agents.</p>
       <a class="code-link" href="https://github.com/faryalsyeda/multi-agent-workflow">Multi-Agent Workflow on GitHub -&gt;</a>
@@ -130,6 +131,7 @@
       <p><strong>Problem:</strong> An agent that only answers from memory cannot complete real work.</p>
       <p><strong>Solution:</strong> The agent picks a tool from its registry and returns the tool's actual result, with the tool name stated. Tools: score_lead, search_docs, draft_email, add_numbers.</p>
       <p><strong>Demo result:</strong> Tested lead scoring (100/A), document search, and add 12+30+8=50.</p>
+      <p><strong>Real run:</strong> The same tools were also run on real inputs: LEAGUE Real Estate, Fort Worth, TX, from the real 19-lead sample scored 100 / A, document search returned Faryal's real services text, a draft email was made for that real company, and the real state counts added to 19 (CA 6 + FL 4 + NY 4 + TX 3 + IL 1 + MN 1). Contact emails and phones are not published.</p>
       <p class="tech"><strong>Tech:</strong> Python, FastAPI, MCP-style tool manifest</p>
       <p>Honest limit: tools run as local Python functions behind an MCP-style manifest; this is not yet a full MCP server transport.</p>
       <a class="code-link" href="https://github.com/faryalsyeda/mcp-tool-agent">MCP Tool Agent on GitHub -&gt;</a>
@@ -141,6 +143,7 @@
       <p><strong>Solution:</strong> The agent reads Meta campaign data and Shopify revenue, checks Meta revenue against Shopify revenue, calculates ROAS, CTR, CPC and CPA per ad set, and recommends a specific action with a reason: pause wasted spend, refresh tired creative, reduce a weak ad set, increase a strong one, or review an attribution gap.</p>
       <p><strong>Demo result:</strong> On a 5-ad-set fictional jewelry sample, total spend $1,320, Meta revenue $3,550, Shopify revenue $3,530, 45 conversions, overall ROAS 2.69, with 2 ad sets flagged to scale, 1 to pause, 1 to reduce, and 1 to review for a 38.2% attribution gap.</p>
       <p class="tech"><strong>Tech:</strong> Python, FastAPI, CSV</p>
+      <p><strong>Real run:</strong> Not yet. A real run needs a real Meta ad account, and no client has given access yet, so no real campaign numbers are claimed here. The pilot-ready step is done: read-only access first, reporting only, then approved changes within the 20% limit, with a stop control.</p>
       <p>Honest limit: this is a demo on fictional sample data. It does not connect to a real Meta ad account, it does not spend real money, and no action is taken without human approval, within a 20% budget-change limit, with a stop control.</p>
       <a class="code-link" href="https://github.com/faryalsyeda/Meta_Media_Buying_Agent">Meta Media Buying Agent on GitHub -&gt;</a>
     </div>
