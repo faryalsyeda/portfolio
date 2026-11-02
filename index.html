@@ -132,6 +132,16 @@
       <p>Honest limit: tools run as local Python functions behind an MCP-style manifest; this is not yet a full MCP server transport.</p>
       <a class="code-link" href="https://github.com/faryalsyeda/mcp-tool-agent">MCP Tool Agent on GitHub -&gt;</a>
     </div>
+
+    <div class="project">
+      <h3>5. Meta Media Buying Agent <span class="status">Done, demo ready</span></h3>
+      <p><strong>Problem:</strong> A jewelry or e-commerce brand runs several Meta ad sets at once, and checking wasted spend, tired creative, and scaling chances by hand every day is slow and risky.</p>
+      <p><strong>Solution:</strong> The agent reads Meta campaign data and Shopify revenue, checks Meta revenue against Shopify revenue, calculates ROAS, CTR, CPC and CPA per ad set, and recommends a specific action with a reason: pause wasted spend, refresh tired creative, reduce a weak ad set, increase a strong one, or review an attribution gap.</p>
+      <p><strong>Demo result:</strong> On a 5-ad-set fictional jewelry sample, total spend $1,320, Meta revenue $3,550, Shopify revenue $3,530, 45 conversions, overall ROAS 2.69, with 2 ad sets flagged to scale, 1 to pause, 1 to reduce, and 1 to review for a 38.2% attribution gap.</p>
+      <p class="tech"><strong>Tech:</strong> Python, FastAPI, CSV</p>
+      <p>Honest limit: this is a demo on fictional sample data. It does not connect to a real Meta ad account, it does not spend real money, and no action is taken without human approval, within a 20% budget-change limit, with a stop control.</p>
+      <a class="code-link" href="https://github.com/faryalsyeda/Meta_Media_Buying_Agent">Meta Media Buying Agent on GitHub -&gt;</a>
+    </div>
   </section>
 
   <section>
@@ -144,6 +154,7 @@
       <span class="tag">RAG - Document RAG Agent</span>
       <span class="tag">Multi-Agent Systems - Multi-Agent Workflow</span>
       <span class="tag">MCP - MCP Tool Agent</span>
+      <span class="tag">Meta Media Buying - Meta Media Buying Agent</span>
       <span class="tag">Prompt Engineering</span>
       <span class="tag">Context Engineering</span>
       <span class="tag">Docker - Dockerfile in each project</span>
