@@ -156,6 +156,17 @@
       <p>Honest limit: this demo does not use an LLM, so answers are quotes, not generated text. Appointment requests are not confirmed bookings, and order status is from a sample file, not a live store system. A real client version would use that client's own documents, calendar and order system.</p>
       <a class="code-link" href="https://github.com/faryalsyeda/Website_FAQ_Agent">Website FAQ Agent on GitHub -&gt;</a>
     </div>
+
+    <div class="project">
+      <h3>7. Multi-Agent Business Assistant <span class="status">Done, demo ready</span></h3>
+      <p><strong>Problem:</strong> A small business loses time on lead follow-up, searching documents for answers, and drafting the same emails again and again, with no one checking the draft before it goes out.</p>
+      <p><strong>Solution:</strong> Four agents work together in one system: a Researcher finds facts with sources and scores leads, a Writer drafts from those facts only, a Reviewer checks the draft and gives a PASS or FAIL with reasons, and a Tool Agent runs four tools — score_lead, search_docs, draft_email and add_numbers. A FastAPI app runs the workflow, and nothing is sent without human approval.</p>
+      <p><strong>Demo result:</strong> On the real 19-lead USA real estate sample, LEAGUE Real Estate scored 100 / A - Contact first. For "lead generation" for "small cafes", the full run found 3 facts with sources and the Reviewer gave a PASS, with approval status PENDING_APPROVAL. An unrelated question correctly returned "No relevant section found".</p>
+      <p class="tech"><strong>Tech:</strong> Python, FastAPI, RAG, MCP tools, Docker, CI/CD</p>
+      <p><strong>Real run:</strong> The lead score and the RAG answers were run on real sample data as above. This is a demo, not a production client result, and no client has used it in production yet.</p>
+      <p>Honest limit: this demo is rule-based with quoted answers, plus an optional LLM via the client's own API key in .env. It does not send any email on its own, and no action is taken without human approval.</p>
+      <a class="code-link" href="https://github.com/faryalsyeda/Multi_Agent_Business_Assistant">Multi-Agent Business Assistant on GitHub -&gt;</a>
+    </div>
   </section>
 
   <section>
@@ -170,6 +181,7 @@
       <span class="tag">MCP - MCP Tool Agent</span>
       <span class="tag">Meta Media Buying - Meta Media Buying Agent</span>
       <span class="tag">Website FAQ Agent</span>
+      <span class="tag">Multi-Agent Business Assistant</span>
       <span class="tag">Prompt Engineering</span>
       <span class="tag">Context Engineering</span>
       <span class="tag">Docker - Dockerfile in each project</span>
